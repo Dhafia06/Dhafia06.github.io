@@ -49,11 +49,32 @@ nav ul li a:hover {
     padding: 95px 60px;
     gap: 60px;
 }
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
 
+.hero h1 span {
+    color: #38f8d1;
+}
+#about p {
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 18px;
+    color: #d9ffff;
+}
+.qualities {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #c8eeee;
+}
 /* Image */
 #image img {
-    height: 350px;
-    width: 350px;
+    width: 380px;
+    height: 380px;
+    object-fit: cover;
+    object-position: center;
     border-radius: 50%;
     border: 3px solid #38f8d1;
     box-shadow: 0 0 40px rgba(56,248,209,.6);
@@ -97,6 +118,10 @@ section {
     justify-content: center;
     gap: 35px;
 }
+
+#projects .heading {
+    width: 100%;
+}
 .project-box {
     height: 300px;
     width: 300px;
@@ -110,6 +135,7 @@ section {
 .project-box img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
     border-radius: 18px;
     transition: .5s;
 }
@@ -255,4 +281,51 @@ section {
     margin-top: 18px;
     font-size: 16px;
     opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        padding: 18px 25px;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    nav ul li {
+        margin: 0 8px;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    #home {
+        flex-direction: column;
+        text-align: center;
+        padding: 70px 25px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    #image img {
+        width: 280px;
+        height: 280px;
+    }
+
+    section {
+        padding: 60px 25px;
+    }
+
+    #contact form {
+        width: 90%;
+        padding: 30px 15px;
+    }
+
+    #contact input,
+    #contact textarea {
+        width: 85%;
+    }
 }
