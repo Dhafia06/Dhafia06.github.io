@@ -9,7 +9,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 });
 
 // Typing animation
-const words = ["Dhafia", "Frontend Developer", "Student", "Creator"];
+const words = ["Dhafia", "Fullstack Developer", "AI Engineer", "Problem solver", "Student"];
 let wordIndex = 0;
 let charIndex = 0;
 
